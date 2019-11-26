@@ -79,6 +79,19 @@ public class SecretSanta {
     }
 
     /**
+     * Print the usage for the setup mode
+     * The usage is all accepted inputs from the user and a brief explanation of that input's functionality.
+     */
+    public static void printSetupUsage() {
+        System.out.print("Usage:\n");
+        System.out.print("\t \"Help\" to print usage\n");
+        System.out.print("\t \"List\" to get current participant list\n");
+        System.out.print("\t \"Remove {name}\" to remove that name from the list\n");
+        System.out.print("\t \"Done\" when participants list is complete\n");
+        System.out.println("\t \"End\" to end the program");
+    }
+    
+    /**
      * Print the usage for the game mode.
      * The usage is all accepted inputs from the user and a brief explanation of that input's functionality.
      */
@@ -88,22 +101,9 @@ public class SecretSanta {
         System.out.print("\t Type in your name, Santa, to get your Human.\n");
         System.out.print("Other Usage:\n");
         System.out.print("\t \"Help\" to print usage\n");
+        System.out.print("\t \"Edit\" to edit the particpants list and generate a new solution\n");
         System.out.print("\t \"Get my santa\" to enter a Human and get their Santa\n");
         System.out.print("\t \"Generate new solution\" to generate a new set of Santa and Human pairs.\n");
-        System.out.println("\t \"End\" to end the program");
-    }
-
-    /**
-     * Print the usage for the setup mode
-     * The usage is all accepted inputs from the user and a brief explanation of that input's functionality.
-     */
-    public static void printSetupUsage() {
-        System.out.print("Usage:\n");
-        System.out.print("\t \"Help\" to print usage\n");
-        System.out.print("\t \"Edit\" to edit the particpants list and generate a new solution\n");
-        System.out.print("\t \"List\" to get current participant list\n");
-        System.out.print("\t \"Remove {name}\" to remove that name from the list\n");
-        System.out.print("\t \"Done\" when participants list is complete\n");
         System.out.println("\t \"End\" to end the program");
     }
 
